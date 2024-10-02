@@ -1,1 +1,40 @@
+Esta es mi versión de "I love you, a little, a lot, passionately... not at all". Lo he implementado declarando seis Strings, cada uno con una de las frases.
 
+Dado un número de pétalos (nb_petals), si este número es mayor que 6, entonces asignamos a nb_petals el resto de nb_petals/6.
+
+A partir de aquí, si el número de pétalos es 1, devuelvo el String pertinente, y así sucesivamente.
+
+
+
+public class Sid {
+    public static String howMuchILoveYou(int nb_petals) {
+    
+    //your code here :)
+      String uno="I love you";
+      String dos="a little";
+      String tres="a lot";
+      String cuatro="passionately";
+      String cinco="madly";
+      String seis="not at all";
+      if(nb_petals>6){
+        nb_petals=nb_petals%6;
+      }
+      if(nb_petals==1){
+    return uno;
+        }
+      if(nb_petals==2){
+    return dos;
+        }
+      if(nb_petals==3){
+    return tres;
+        }
+      if(nb_petals==4){
+    return cuatro;
+        }
+      if(nb_petals==5){
+    return cinco;
+        }
+      else
+        return seis;
+    }
+}

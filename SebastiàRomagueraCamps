@@ -1,0 +1,16 @@
+public class HolaSebastiaRomagueraCamps {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        String nombre="Sebastià Romaguera Camps";
+        System.out.println("Hola em dic " + nombre + ".");
+    }
+    
+}
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+run:
+Hola em dic Sebastià Romaguera Camps.
+BUILD SUCCESSFUL (total time: 0 seconds)

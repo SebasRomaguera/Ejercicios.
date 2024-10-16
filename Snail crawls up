@@ -1,0 +1,15 @@
+public class Kata {
+    public static int snail(int column, int day, int night) {
+      int distancia=0;
+      int contador=0;
+      while(distancia<column){
+        distancia=distancia+day;
+        if(distancia<column){
+          distancia=distancia-night;
+        }
+        contador++;
+      }
+      
+      return contador; // your code here
+    }
+}

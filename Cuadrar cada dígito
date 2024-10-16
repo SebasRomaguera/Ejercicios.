@@ -1,0 +1,24 @@
+public class SquareDigit {
+
+    public int squareDigits(int n) {
+        // Manejar el caso especial para 0
+        if (n == 0) {
+            return 0; // Si n es 0, simplemente devuelve 0
+        }
+        
+        // Variable para almacenar el resultado final como String
+        StringBuilder result = new StringBuilder();
+        
+        // Mientras haya dígitos en n
+        while (n != 0) {
+            int digit = n % 10; // Obtener el último dígito
+            result.insert(0, digit * digit); // Elevar al cuadrado y concatenar al principio
+            n = n / 10; // Reducir n
+        }
+        
+        // Convertir el StringBuilder a String y luego a int
+        return Integer.parseInt(result.toString());
+    }
+
+   
+}

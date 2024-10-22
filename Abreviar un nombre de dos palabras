@@ -1,0 +1,16 @@
+public class AbbreviateTwoWords {
+
+  public static String abbrevName(String name) {
+    // Obtenemos la primera inicial
+    char inicial1 = Character.toUpperCase(name.charAt(0));
+    
+    // Buscamos el espacio entre las dos palabras
+    int spaceIndex = name.indexOf(' ');
+
+    // Obtenemos la segunda inicial, el carácter después del espacio
+    char inicial2 = Character.toUpperCase(name.charAt(spaceIndex + 1));
+    
+    // Devolvemos las iniciales con un punto entre ellas
+    return inicial1 + "." + inicial2;
+  }
+}

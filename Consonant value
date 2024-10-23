@@ -1,0 +1,22 @@
+public class ConsonantValue {
+    public static int solve(final String s) {
+      int suma=0;
+      int suma2=0;
+      for(int i=0;i<s.length();i++){
+        char car=s.charAt(i);
+        if(car!='a' && car!= 'e' && car!='i' && car!='o' && car!='u'){
+          suma+=(int)car - 96;
+          
+          if(suma>suma2){
+            suma2=suma;
+          }
+        }else{
+          suma=0;
+        }
+      }
+      
+      
+      
+        return suma2;
+    }
+}
